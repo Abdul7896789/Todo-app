@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+position: relative;
+top: 200px;
+padding: 30px;
+display: flex;
+flex-direction: column;
+
+border-radius: 10px;
+}
+
+
+.wrapper .task_input input{
+    height: 40px;
+    padding-left: 10px;
+    font-size: 12px;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow:inset 0px 0px 8px rgba(49, 49, 49, 0.527);
+border-radius: 10px;
+}
+
+.wrapper .filter_items{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.wrapper .filter_items button{
+    padding: 10px 20px;
+    background-color: rgb(222, 92, 255);
+border: none;
+color: white;
+font-size: 11px;
+border-radius: 5px;
+cursor: pointer;
+}
+.wrapper .filter_items .filter_buttons{
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 13px;
+    color: blueviolet;
+    font-weight: 500;
+}
+a.active{
+    border-bottom: 2px solid blueviolet;
+}
+.taskbox{
+    width: 105%;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x:hidden
+    ;
+margin-top: 20px;
+}
+.taskbox::-webkit-scrollbar{
+    visibility: hidden;
+}
+.taskbox li{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(157, 148, 165);
+    height: 80px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.taskbox li p{
+    color: white;
+
+}
+.task label p.checked{
+    text-decoration: line-through;
+ }
